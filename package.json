@@ -1,0 +1,17 @@
+{
+  "name": "testcafe-automateit",
+  "version": "1.0.0",
+  "description": "This is description",
+  "dependencies": {
+    "@cucumber/cucumber": "^7.2.1",
+    "gherkin-testcafe": "^5.0.1",
+    "testcafe": "^1.14.2",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "scripts": {
+    "test-all": "testcafe chrome tests",
+    "test-all-and-report": "testcafe chrome tests -c 2 -r spec,html:report.html",
+    "test-remote": "testcafe remote tests --qr-code",
+    "gherkin-tests": "gherkin-testcafe chrome features step_definitions"
+  }
+}
